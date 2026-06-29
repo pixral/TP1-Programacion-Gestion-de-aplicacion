@@ -1,4 +1,4 @@
-# TP1-Programacion-Gestion-de-aplicacion
+# TP1-Programacion-Gestion-de-Sistema
 Trabajo completado para la cursada
 
 
