@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - Progra3Card</title>
+    <!-- Cargamos Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-neutral-950 h-screen flex items-center justify-center selection:bg-neutral-800 selection:text-white">
+
+    <div class="bg-neutral-900 border border-neutral-800 p-8 rounded-2xl shadow-2xl w-full max-w-sm">
+        <!-- Encabezado Minimalista -->
+        <div class="mb-8">
+            <h2 class="text-2xl font-light tracking-widest text-white font-mono uppercase">Progra3Card</h2>
+            <p class="text-xs text-neutral-500 mt-1 uppercase tracking-wider">Portal de Clientes</p>
+        </div>
+
+        <!-- Formulario que conecta con ingreso.php -->
+        <form action="ingreso.php" method="POST" class="space-y-5">
+            
+            <!-- Campo Usuario -->
+            <div>
+                <label for="usuario" class="block text-xs font-medium uppercase tracking-wider text-neutral-400 mb-2">Usuario</label>
+                <input type="text" id="usuario" name="usuario" required 
+                       class="w-full bg-neutral-950 border border-neutral-800 text-neutral-200 text-sm rounded-xl px-4 py-3 focus:outline-none focus:border-neutral-500 placeholder-neutral-700 transition" 
+                       placeholder="usuario">
+            </div>
+
+            <!-- Campo Contraseña -->
+            <div>
+                <label for="password" class="block text-xs font-medium uppercase tracking-wider text-neutral-400 mb-2">Contraseña</label>
+                <input type="password" id="password" name="password" required 
+                       class="w-full bg-neutral-950 border border-neutral-800 text-neutral-200 text-sm rounded-xl px-4 py-3 focus:outline-none focus:border-neutral-500 placeholder-neutral-700 transition" 
+                       placeholder="••••••••">
+            </div>
+
+            <!-- Botón de Envío Minimalista (Blanco sobre Negro) -->
+            <button type="submit" 
+                    class="w-full bg-white hover:bg-neutral-200 text-neutral-950 font-semibold text-sm py-3 px-4 rounded-xl shadow transition duration-200 mt-4 uppercase tracking-wider cursor-pointer">
+                Ingresar
+            </button>
+        </form>
+
+        <!-- Enlace al registro inferior -->
+        <div class="text-center mt-8 text-xs tracking-wide text-neutral-500">
+            ¿Cuenta inactiva? 
+            <a href="registro.html" class="text-neutral-300 hover:text-white transition underline underline-offset-4">Activá tu tarjeta</a>
+        </div>
+    </div>
+
+</body>
+</html>
